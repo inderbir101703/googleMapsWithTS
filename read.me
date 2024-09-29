@@ -1,0 +1,11 @@
+implementations:
+1. first we wanted to restrict the API surface area exposed in index.ts. ( sort of limit the access to developer in index.ts file,
+other engineers only can implement which he is allowed)
+
+2. used interfaces as guard to function so that only objects having  that specific arguments can enter in/use that that funciton.
+so here a function is telling other classes to keep the strcuture so that function can implement it.
+
+3. we can use optionally implements to help ts to tell us the error in the  class defination file
+
+typical ts file: (low couling)
+interface definations for working with class (20%) + class definations(80%)
